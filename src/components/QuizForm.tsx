@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, Check, Dumbbell, Home as HomeIcon, X } from "luc
 import { toast } from "@/hooks/use-toast";
 
 type Goal = "Emagrecimento" | "Ganho de massa" | "Não sei dizer";
-type Sex = "Masculino" | "Feminino";
+type Sex = "Feminino";
 type Routine = "Leve" | "Moderada" | "Intensa";
 type Training = "Em casa" | "Academia" | "Não treino";
 
@@ -33,7 +33,7 @@ const initial: FormState = {
   idade: "",
   objetivo: "",
   horarios: "",
-  sexo: "",
+  sexo: "Feminino",
   meals: {},
   rotina: "",
   treino: "",
@@ -222,16 +222,6 @@ const StepDados = ({
         {(["Emagrecimento", "Ganho de massa", "Não sei dizer"] as Goal[]).map((g) => (
           <Pill key={g} active={data.objetivo === g} onClick={() => update("objetivo", g)}>
             {g}
-          </Pill>
-        ))}
-      </div>
-    </Field>
-
-    <Field label="Sexo">
-      <div className="flex flex-wrap gap-2">
-        {(["Masculino", "Feminino"] as Sex[]).map((s) => (
-          <Pill key={s} active={data.sexo === s} onClick={() => update("sexo", s)}>
-            {s}
           </Pill>
         ))}
       </div>
