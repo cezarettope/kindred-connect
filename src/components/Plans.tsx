@@ -60,7 +60,7 @@ const plans: Plan[] = [
   },
   {
     key: "consulta",
-    name: "Consulta com o Mentor",
+    name: "Mentoria Individual",
     price: "R$ 29,90",
     badge: "Premium",
     highlight: false,

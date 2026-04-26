@@ -40,19 +40,11 @@ const Result = ({ onContinue }: { onContinue: () => void }) => {
               </ul>
             </div>
 
-            <div className="rounded-2xl bg-secondary/60 p-5 text-center">
-              <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                Acesso liberado
-              </div>
-              <div className="mt-1 text-sm text-muted-foreground">A partir de</div>
-              <div className="mt-1 text-4xl font-extrabold text-primary">R$ 19,90</div>
-            </div>
-
             <button
               onClick={onContinue}
               className="btn-flame pulse-glow w-full text-base inline-flex items-center justify-center gap-2"
             >
-              Acessar meu Protocolo Termo Hormonal
+              Ver meus planos de acesso ao Protocolo
               <ArrowDown className="h-5 w-5" />
             </button>
           </div>
