@@ -45,7 +45,7 @@ const Result = ({ onContinue }: { onContinue: () => void }) => {
                 Acesso liberado
               </div>
               <div className="mt-1 text-sm text-muted-foreground">A partir de</div>
-              <div className="mt-1 text-4xl font-extrabold text-primary">R$ 9,99</div>
+              <div className="mt-1 text-4xl font-extrabold text-primary">R$ 19,90</div>
             </div>
 
             <button
