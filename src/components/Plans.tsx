@@ -114,6 +114,7 @@ const Plans = () => {
   };
 
   // Visual ordering: Essencial (1) → Protocolo destaque (2 - centro) → Consulta (3)
+  // Essencial → Protocolo (destaque/centro) → Mentoria Individual (premium)
   const ordered: Plan[] = [plans[0], plans[1], plans[2]];
 
   return (
