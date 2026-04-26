@@ -60,7 +60,7 @@ const plans: Plan[] = [
   },
   {
     key: "consulta",
-    name: "Consulta com o Mentor",
+    name: "Mentoria Individual",
     price: "R$ 29,90",
     badge: "Premium",
     highlight: false,
@@ -114,6 +114,7 @@ const Plans = () => {
   };
 
   // Visual ordering: Essencial (1) → Protocolo destaque (2 - centro) → Consulta (3)
+  // Essencial → Protocolo (destaque/centro) → Mentoria Individual (premium)
   const ordered: Plan[] = [plans[0], plans[1], plans[2]];
 
   return (
@@ -130,6 +131,9 @@ const Plans = () => {
                 Protocolo Termo Hormonal
               </span>
             </h2>
+            <p className="mt-5 text-base text-muted-foreground md:text-lg">
+              Seu diagnóstico está pronto. Agora escolha como quer acessar seu protocolo personalizado:
+            </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3 md:items-center">
