@@ -130,6 +130,9 @@ const Plans = () => {
                 Protocolo Termo Hormonal
               </span>
             </h2>
+            <p className="mt-5 text-base text-muted-foreground md:text-lg">
+              Seu diagnóstico está pronto. Agora escolha como quer acessar seu protocolo personalizado:
+            </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3 md:items-center">
